@@ -1,0 +1,9 @@
+1 three sum
+hashmap 和 two pointer都是最优解，都需要处理元素重复的问题（可以在答案最后用set处理，也可以过程中处理，过程中处理比较棘手）
+hashmap tips:使用one pass的方法，即对于i,j,k，定i,用set()去记录j，然后遍历k
+推荐使用two pointer,因为它可以应用于three sum的变种
+
+
+未掌握的知识点：
+快速选择
+kmp

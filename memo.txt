@@ -1,0 +1,30 @@
+ord(): char to ASCII
+chr(): ASCII to char
+
+array to string: "".join(array)
+
+from collections import deque，OrderedDict, defaultdict，Counter
+
+import heapq
+heapq.heappush(heap, 3)
+min_element = heapq.heappop(heap)
+
+s.split()
+
+my_list.sort(reverse=True)
+sorted_list = sorted(my_list)
+array.sort(key=lambda x: (-x[0], x[1])) 多个元素排序lambda
+如下内容重载类的小于方法（用于堆堆自定义排序）：
+def __lt__(self,other):
+    if self.f != other.f:
+        return self.f<other.f
+    else:
+        return self.s>other.s
+
+Counter(words)，返回一个hashmap，统计所有元素出现的次数
+
+binary_str = bin(num)[2:]
+
+math.lcm() 最小公倍数
+
+
