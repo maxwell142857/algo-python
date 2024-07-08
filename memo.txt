@@ -4,7 +4,7 @@ chr(): ASCII to char
 array to string: "".join(array)
 
 from collections import deque，OrderedDict, defaultdict，Counter
-from sortedcontainers import SortedDict 这个是二叉平衡搜索树
+from sortedcontainers import SortedDict,SortedList 这个是二叉平衡搜索树
 
 import heapq
 heapq.heappush(heap, 3)

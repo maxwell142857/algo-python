@@ -1,4 +1,3 @@
-k = 5
-for i in range(k):
-    print(k)
-    k -= 1
+a = 'abc'
+for i in range(4):
+    print(a[i:])
