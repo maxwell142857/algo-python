@@ -28,4 +28,6 @@ binary_str = bin(num)[2:]
 s.isdigit()判断是否全为数字
 math.lcm() 最小公倍数
 
+大小写转换：s.lower(),s.upper()
+
 
