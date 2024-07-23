@@ -1,4 +1,6 @@
 class Solution:
+    # O(n lgn)
+    # divide and conquer
     def minimumOperations(self, nums: List[int], target: List[int]) -> int:
         n = len(nums)
         diff = []
@@ -41,3 +43,23 @@ class Solution:
         ans += cost(startIndex,n)
         return ans
 
+    # O(n)
+    # greedy
+    def minimumOperations(self, nums: List[int], target: List[int]) -> int:
+        n = len(nums)
+        incre,decre,cnt = 0,0,0
+        for i in range(n):
+            diff = nums[i]-target[i]
+            if diff > 0:
+                if diff > incre:
+                    cnt += diff-incre
+                incre = diff
+                decre = 0
+            elif diff < 0:
+                if diff < decre:
+                    cnt += decre-diff
+                decre = diff
+                incre = 0
+            else:
+                incre,decre = 0,0
+        return cnt
