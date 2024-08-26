@@ -11,6 +11,7 @@ heapq.heappush(heap, 3)
 min_element = heapq.heappop(heap)
 
 s.split()
+numbers = re.split(r'[+-]',expression) 正则用多个分隔符
 
 my_list.sort(reverse=True)
 sorted_list = sorted(my_list)
@@ -29,5 +30,7 @@ s.isdigit()判断是否全为数字
 math.lcm() 最小公倍数
 
 大小写转换：s.lower(),s.upper()
+
+custom_string = f"My name is {name} and I am {age} years old."
 
 
